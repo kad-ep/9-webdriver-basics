@@ -33,8 +33,6 @@ public class Main {
         WebElement navMenu = waitForElementLocatedBy(driver, By.cssSelector("div.secondary-header>ul.mobile-nav-content"));
         WebElement banner = waitForElementLocatedBy(driver, By.xpath("//img[@alt='Image of books trending on TikTok']"));
 
-        Thread.sleep(2000);
-
         searchField.sendKeys("Atomic Habits");
         searchField.sendKeys(Keys.ENTER);
 
